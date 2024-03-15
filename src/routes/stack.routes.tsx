@@ -5,6 +5,9 @@ import Login from "../screens/Login";
 const { Screen, Navigator } = createNativeStackNavigator();
 
 export default function StackRoutes() {
+
+  const routes = "tab";
+
   return (
     <Navigator>
       <Screen

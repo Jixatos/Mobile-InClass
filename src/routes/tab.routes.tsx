@@ -1,10 +1,14 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../screens/Home";
 import Login from "../screens/Login";
+import { SimpleLineIcons } from "@expo/vector-icons";
 
 const { Screen, Navigator } = createBottomTabNavigator();
 
 export default function TabRoutes() {
+
+  const routes = "tab";
+
   return (
     <Navigator>
       <Screen
@@ -13,9 +17,9 @@ export default function TabRoutes() {
         options={{
           headerShown: true,
           headerTitleAlign: "center",
-          headerStyle: {
-            backgroundColor: '#ff5232'
-          }
+          tabBarIcon: () => (
+            <SimpleLineIcons name="home" size={24} color="black" />
+          ),
         }}
       />
       <Screen
@@ -24,9 +28,9 @@ export default function TabRoutes() {
         options={{
           headerShown: true,
           headerTitleAlign: "center",
-          headerStyle: {
-            backgroundColor: '#ff5232'
-          }
+          tabBarIcon: () => (
+            <SimpleLineIcons name="login" size={24} color="black" />
+          ),
         }}
       />
     </Navigator>

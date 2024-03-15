@@ -28,7 +28,7 @@ export default function App() {
 const style = StyleSheet.create({
   viewSafeAndroid: {
     flex: 1,
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight*0.2: 0,
   },
   container: {
     flex: 1,
