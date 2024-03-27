@@ -1,11 +1,24 @@
-import { StyleSheet, Text, View, TextInput, Dimensions } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View, TextInput, Dimensions, Button } from 'react-native'
+import React, { useEffect, useState } from 'react'
 
 export default function Login() {
+
+  const[user, setUser] = useState({
+    "username": null,
+    "passcode": null
+  })
+
   return (
     <View style={styles.container}>
-      <TextInput style={styles.txtInput} placeholder='E-Mail'></TextInput>
+      <Text style={styles.title}>Login</Text>
+      <TextInput style={styles.txtInput} placeholder='Username or Email'></TextInput>
       <TextInput style={styles.txtInput} placeholder='Password'></TextInput>
+
+      <Button title='Confirm'
+        onPress={()=>{
+          
+        }}
+      />
     </View>
   )
 }
@@ -18,15 +31,19 @@ const styles = StyleSheet.create({
     flex:1,
     justifyContent: 'center',
     alignItems: 'center',
-    gap: 20
+    gap: 15,
   },
   txtInput: {
     width: windowWidth * 0.5,
-    height: windowHeight * 0.035,
+    height: windowHeight * 0.055,
     borderColor: '#000000',
     borderWidth: 1,
     backgroundColor: 'white',
     borderRadius: 20,
+    justifyContent: 'center',
+    paddingLeft: 10,
+  },
+  title: {
+    fontSize: 20,
   }
-
 })

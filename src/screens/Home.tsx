@@ -1,14 +1,22 @@
-import { Text, View, Button } from "react-native";
+import { Text, View, Button, StyleSheet } from "react-native";
 import React from "react";
 
 export default ({ navigation }) => {
-  function toLogin() {
-    navigation.navigate("Login");
-  }
+
+  
 
   return (
-    <View>
-      <Button title="Go to Login" onPress={toLogin} />
+    <View style={styles.container}>
+      <Text>Home Screen</Text>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex:1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+
+});
