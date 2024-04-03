@@ -1,4 +1,5 @@
-import { Text, View, Button, StyleSheet } from "react-native";
+import { View, Button, StyleSheet } from "react-native";
+import { Text } from "@rneui/themed";
 import React from "react";
 
 export default ({ navigation }) => {
@@ -7,7 +8,7 @@ export default ({ navigation }) => {
 
   return (
     <View style={styles.container}>
-      <Text>Home Screen</Text>
+      <Text h1>Home Screen</Text>
     </View>
   );
 };
