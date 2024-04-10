@@ -1,8 +1,6 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import { StyleSheet, Platform, StatusBar, SafeAreaView } from "react-native";
 import { Routes } from "./src/routes";
-import Author from "./src/components/Author";
 
 // npm install @react-navigation/native-stack
 // npm install @react-navigation/native
@@ -10,10 +8,6 @@ import Author from "./src/components/Author";
 // npm install @react-navigation/bottom-tabs
 
 export default function App() {
-  useEffect(() => {
-    console.log("App inicializado!");
-  });
-
   return (
     <SafeAreaView style={style.viewSafeAndroid}>
       <Routes />
