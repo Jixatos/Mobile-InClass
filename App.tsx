@@ -25,8 +25,4 @@ const style = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  tamImage: {
-    width: 200,
-    height: 200,
-  },
 });
